@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1E43J6JSQY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1E43J6JSQY');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Saurabh Saini</title>
+    <meta name="description"
+        content="Saurabh Saini designs learning experiences that streamline processes and help organizations work smarter.">
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .about-section {
+            padding: var(--space-xl) 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: var(--space-xl);
+            align-items: flex-start;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            object-fit: cover;
+            object-position: top center;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .about-content h1 {
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+            margin-bottom: 2rem;
+        }
+
+        .about-content p {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .stat-item h4 {
+            font-size: 2.5rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 0.95rem;
+            color: var(--text-tertiary);
+            margin: 0;
+        }
+
+        @media (max-width: 900px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+
+            .about-image {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html">Saurabh Saini</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="portfolio.html">Work</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Insights</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="./assets/images/core/headshot.png" alt="Saurabh Saini"
+                            onerror="this.src='https://placehold.co/600x800/EBE6DC/737780?text=Saurabh+Saini'">
+                    </div>
+                    <div class="about-content">
+                        <h1>Connecting strategy,<br>design, and execution.</h1>
+                        <p>
+                            I am an Instructional Designer and Performance Consultant. With a formal teaching background
+                            and years of operational experience across industries, my work sits at the intersection of
+                            creativity, clarity, and precision.
+                        </p>
+                        <p>
+                            I don't just build courses; I analyze root causes. By turning complex workflows into clear
+                            strategies, I craft solutions that change behaviors and eliminate operational friction.
+                        </p>
+                        <p>
+                            From corporate training ecosystems to interactive data dashboards, my focus is always on
+                            delivering results that make a measurable difference for teams and stakeholders.
+                        </p>
+
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <h4>8+</h4>
+                                <p>Years of combined experience in teaching & corporate strategy</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>95%</h4>
+                                <p>Reduction in onboarding friction via strategic learning hubs</p>
+                            </div>
+                        </div>
+
+                        <div class="subtle-testimonial">
+                            <p class="testimonial-quote">Most organizations don't lack talent—they lack visibility into
+                                where capability actually drives impact. <strong>That's where Saurabh Saini stands
+                                    out.</strong></p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>David Swensen</h4>
+                                    <p>VP of Operational Excellence @ Ashley Global Retail</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <p class="footer-logo">Saurabh Saini</p>
+                <p class="footer-desc">Performance Consultant & Learning Architect.</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.linkedin.com/in/iamsaurabhsaini/" target="_blank">LinkedIn</a>
+                <a href="mailto:contact@iamsaurabhsaini.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

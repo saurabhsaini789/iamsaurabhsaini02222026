@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1E43J6JSQY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1E43J6JSQY');
+    </script>
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "u52l86f4q0");
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning System – Articulate Storyline | Saurabh Saini</title>
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .doc-section {
+            padding: var(--space-xl) 0;
+        }
+
+        .doc-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-tertiary);
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+
+        .doc-header h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 0.5rem;
+        }
+
+        .doc-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .doc-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-subtle);
+            margin-bottom: var(--space-lg);
+        }
+
+        .meta-item span {
+            display: block;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-tertiary);
+            margin-bottom: 0.25rem;
+        }
+
+        .meta-item strong {
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+
+        .doc-content h2 {
+            font-size: 1.75rem;
+            margin: 3rem 0 1rem;
+        }
+
+        .doc-content h3 {
+            font-size: 1.25rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        .doc-content p {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .doc-content ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .doc-content li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+        }
+
+        .doc-content li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        .doc-image {
+            margin: 3rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .doc-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+        }
+
+        .doc-image img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 600px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .image-grid .doc-image {
+            margin: 0;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .tag {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html">Saurabh Saini</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html" class="active">Work</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Insights</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+        </div>
+    </header>
+
+    <main>
+        <article class="doc-section">
+            <div class="doc-container">
+
+                <a href="portfolio.html" class="back-link">← Back to Work</a>
+
+                <header class="doc-header">
+                    <h1>Interactive Learning System – Articulate Storyline</h1>
+                    <p class="doc-subtitle">Designing an interactive, scalable eLearning solution that improves
+                        engagement, accessibility, and learner control.</p>
+                    <div class="doc-meta">
+                        <div class="meta-item">
+                            <span>Role</span>
+                            <strong>Instructional Designer & Developer</strong>
+                        </div>
+                        <div class="meta-item">
+                            <span>Focus</span>
+                            <strong>Interaction Design</strong>
+                        </div>
+                        <div class="meta-item">
+                            <span>Format</span>
+                            <strong>Articulate Storyline</strong>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="doc-image">
+                    <img src="./assets/projects/project3_storyline_example/project3_storyline_overview.png"
+                        alt="Storyline Interactive Learning System hero image" class="zoomable-image"
+                        onclick="openLightbox(this.src)"
+                        onerror="this.src='https://placehold.co/800x450/EBE6DC/737780?text=Interactive+Learning+System'">
+                </div>
+
+                <div class="doc-content">
+
+                    <h2>Business Context</h2>
+                    <p>
+                        The organization needed to rapidly convert highly technical SME content into structured digital
+                        learning. However, merely digitizing documents wasn't enough. The business recognized that
+                        text-heavy legacy training was failing to hold learner attention, requiring an urgent shift
+                        toward high engagement, accessibility, and absolute usability for a geographically dispersed
+                        workforce.
+                    </p>
+                    <p>
+                        The mandate was to build a highly scalable, device-friendly interactive system that allowed
+                        employees to digest complex processes intuitively without being overwhelmed.
+                    </p>
+
+                    <h2>The Problem</h2>
+                    <p>
+                        Before this intervention, the learning material was trapped in unstructured SME documentation.
+                        Key challenges included:
+                    </p>
+                    <ul>
+                        <li><strong>Unstructured Content:</strong> Massive blocks of text lacking instructional
+                            hierarchy.</li>
+                        <li><strong>Engagement Risk:</strong> The complex subject matter meant low engagement rates if
+                            not properly gamified or chunked.</li>
+                        <li><strong>Device Compatibility:</strong> The existing approach broke down on tablets and
+                            mobile devices, frustrating end users.</li>
+                    </ul>
+
+                    <h2>Role & Responsibilities</h2>
+                    <p>
+                        As the lead on this project, my responsibilities spanned both the strategy and the precise
+                        technical execution:
+                    </p>
+                    <ul>
+                        <li><strong>End-to-end Instructional Design:</strong> Distilling raw SME knowledge into
+                            actionable learning moments.</li>
+                        <li><strong>Storyboarding:</strong> Wireframing the interaction flow screen by screen.</li>
+                        <li><strong>Interaction Planning:</strong> Designing variables and triggers to customize the
+                            learner path.</li>
+                        <li><strong>Development:</strong> High-fidelity authoring within Articulate Storyline.</li>
+                        <li><strong>Accessibility Integration:</strong> Guaranteeing full use for diverse learning
+                            needs.</li>
+                        <li><strong>Visual Design:</strong> Creating custom graphics to replace text-heavy explanations.
+                        </li>
+                    </ul>
+
+                    <h2>Design & Development Approach</h2>
+
+                    <h3>Content Structuring</h3>
+                    <p>
+                        The raw content was mapped out to isolate 'need-to-know' vs. 'nice-to-know' information. The
+                        cognitive load was actively managed by breaking down core workflows into sequential touchpoints
+                        rather than data dumps.
+                    </p>
+
+                    <h3>Storyboarding</h3>
+                    <p>
+                        Detailed screen-level planning was critical. I collaborated closely with SMEs to validate the
+                        logic of the interactions built. The storyboards served as blueprints for <strong>interaction
+                            logic</strong>, <strong>feedback design</strong>, and the overall <strong>learning
+                            flow</strong>.
+                    </p>
+                    <div class="image-grid">
+                        <div class="doc-image">
+                            <img src="./assets/projects/project3_storyline_example/Course7.jpeg"
+                                alt="Storyboarding logic" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="doc-image">
+                            <img src="./assets/projects/project3_storyline_example/Course8.jpeg"
+                                alt="Feedback design flowchart" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+
+                    <h2>Interactive Design & Technical Implementation</h2>
+                    <p>
+                        Storyline is only as powerful as the logic behind it. This module leveraged advanced authoring
+                        techniques to build a responsive, engaging learning environment.
+                    </p>
+                    <ul>
+                        <li><strong>Layers & Triggers:</strong> Complex layering allowed learners to explore content at
+                            their own pace without advancing screens.</li>
+                        <li><strong>Variable Utilization:</strong> Tracking learner decisions across the module to adapt
+                            upcoming content and quizzes.</li>
+                        <li><strong>Interaction Control:</strong> Building custom interactions that felt organic and
+                            immediately gave feedback based on user clicks.</li>
+                    </ul>
+
+                    <div class="image-grid">
+                        <div class="doc-image">
+                            <img src="./assets/projects/project3_storyline_example/Stoyline1.png"
+                                alt="Storyline trigger implementation" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="doc-image">
+                            <img src="./assets/projects/project3_storyline_example/Stoyline3.png"
+                                alt="Variables and layer logic" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+
+                    <h2>Custom Navigation & Learner Control</h2>
+                    <p>
+                        Standard templates were discarded in favor of a <strong>custom player</strong> that kept the
+                        learner immersed in the content.
+                    </p>
+                    <p>
+                        Controlled navigation was programmed to prevent users from skipping vital compliance steps. By
+                        using custom-built progress markers and completion tracking triggers, learners were guided
+                        smoothly through required gateways without feeling constrained by typical "Next" button gating.
+                    </p>
+                    <div class="doc-image">
+                        <img src="./assets/projects/project3_storyline_example/Stoyline5.png"
+                            alt="Custom navigation and triggers" onclick="openLightbox(this.src)">
+                    </div>
+
+                    <h2>Accessibility & Inclusive Design</h2>
+                    <p>
+                        The interactive system was built with the understanding that not all users learn the same way.
+                        The solution incorporated robust accessibility features:
+                    </p>
+                    <ul>
+                        <li><strong>Audio Narration:</strong> High-quality voiceovers combined with perfectly timed
+                            on-screen text.</li>
+                        <li><strong>Closed Captions (CC):</strong> User-toggled captioning available on every screen.
+                        </li>
+                        <li><strong>Clear Instructions:</strong> Explicit guidance on how to use custom interactive
+                            elements for users with different digital literacy levels.</li>
+                    </ul>
+
+                    <h2>Device-Specific Learning Support</h2>
+                    <p>
+                        Because the module would be accessed across workstations and field devices, usability
+                        improvements were built directly into the UI.
+                    </p>
+                    <p>
+                        Device-specific instructions (e.g., distinguishing between desktop "clicks" and tablet "taps")
+                        were developed. This simple contextual awareness drastically reduced confusion and technical
+                        support tickets.
+                    </p>
+                    <div class="image-grid">
+                        <div class="doc-image">
+                            <img src="./assets/projects/project3_storyline_example/Course4.jpeg"
+                                alt="Tablet Interaction" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="doc-image">
+                            <img src="./assets/projects/project3_storyline_example/Course6.jpeg"
+                                alt="Desktop Interaction" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+
+                    <h2>Visual Design & Process Simplification</h2>
+                    <p>
+                        I replaced paragraphs of text with custom visual workflows. By translating abstract concepts
+                        into clear, stepped infographics, the visual design acted as a direct support tool for rapid
+                        comprehension. Complex workflows were simplified into digestible visuals.
+                    </p>
+                    <div class="doc-image">
+                        <img src="./assets/projects/project3_storyline_example/Course12.jpeg"
+                            alt="Process Simplification Visuals" onclick="openLightbox(this.src)">
+                    </div>
+
+                    <h2>Challenges & Solutions</h2>
+                    <ul>
+                        <li><strong>Content Complexity:</strong> Solved through rigorous instructional mapping
+                            separating nice-to-know from need-to-know.</li>
+                        <li><strong>Cognitive Load:</strong> Mitigated using Storyline's layer functionality to
+                            progressively reveal information only when the user requested it.</li>
+                        <li><strong>Device Usability:</strong> Overcome by establishing device-specific on-screen
+                            instructions.</li>
+                        <li><strong>Engagement:</strong> Enhanced by stripping away the default player and applying
+                            modern, responsive interaction design.</li>
+                    </ul>
+
+                    <h2>Impact & Value</h2>
+                    <p>
+                        This approach elevated the standard for digital learning within the organization. The final
+                        output is an engaging, highly accessible, and technically sophisticated learning hub.
+                    </p>
+                    <p>
+                        The true value of this intervention was an immediate <strong>reduction in cognitive
+                            load</strong>, vastly improved clarity on technical procedures, and a measurable improvement
+                        in the overall learner experience.
+                    </p>
+
+                    <h2>Tools Used</h2>
+                    <div class="tag-container">
+                        <span class="tag">Articulate Storyline 360</span>
+                        <span class="tag">Interaction Design</span>
+                        <span class="tag">Visual Design Apps</span>
+                        <span class="tag">Audio & Caption Integration</span>
+                    </div>
+
+                    <h2>Key Skills Demonstrated</h2>
+                    <div class="tag-container">
+                        <span class="tag">Instructional Design</span>
+                        <span class="tag">Technical Development</span>
+                        <span class="tag">Accessibility (a11y)</span>
+                        <span class="tag">Learning Architecture</span>
+                        <span class="tag">SME Collaboration</span>
+                    </div>
+
+                    <h2>Reflection</h2>
+                    <p>
+                        This case study proves that effective eLearning is never merely a sequence of slides—it’s a
+                        carefully engineered system. By bridging high-level learning strategy with exact technical
+                        execution, I demonstrated how utilizing variables, custom navigation, and inclusive design can
+                        transform a dense policy document into an engaging and empathetic learning experience.
+                    </p>
+
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <p class="footer-logo">Saurabh Saini</p>
+                <p class="footer-desc">Performance Consultant & Learning Architect.</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.linkedin.com/in/iamsaurabhsaini/" target="_blank">LinkedIn</a>
+                <a href="mailto:contact@iamsaurabhsaini.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="imageLightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" onclick="event.stopPropagation()">
+    </div>
+
+    <script>
+        function openLightbox(imgSrc) {
+            const lightbox = document.getElementById('imageLightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            lightboxImg.src = imgSrc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when open
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('imageLightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close when pressing Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === "Escape") {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+
+</html>
