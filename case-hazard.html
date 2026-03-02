@@ -213,7 +213,7 @@
                 </header>
 
                 <div class="doc-image">
-                    <img src="./assets/projects/project1_hazard/images/301dc123-06.png"
+                    <img loading="lazy" src="./assets/projects/project1_hazard/images/301dc123-06.png"
                         alt="Hazard Recognition Module Overview" fetchpriority="high" decoding="async"
                         class="zoomable-image" onclick="openLightbox(this.src)"
                         onerror="this.src='https://placehold.co/800x450/EBE6DC/737780?text=Hazard+Recognition'">
@@ -446,7 +446,7 @@
     <!-- Lightbox Modal -->
     <div id="imageLightbox" class="lightbox" onclick="closeLightbox()">
         <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-        <img class="lightbox-content" id="lightboxImg" onclick="event.stopPropagation()">
+        <img decoding="async" loading="lazy" class="lightbox-content" id="lightboxImg" onclick="event.stopPropagation()">
     </div>
 
     <!-- Back to Top Button -->

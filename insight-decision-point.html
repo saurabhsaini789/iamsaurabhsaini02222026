@@ -147,7 +147,7 @@
                 </header>
 
                 <div class="doc-image">
-                    <img src="./assets/learnings/The_Authority_gap.png" alt="The Authority Gap" class="zoomable-image"
+                    <img decoding="async" loading="lazy" src="./assets/learnings/The_Authority_gap.png" alt="The Authority Gap" class="zoomable-image"
                         onclick="openLightbox(this.src)"
                         onerror="this.src='https://placehold.co/800x450/EBE6DC/737780?text=The+Authority+Gap'">
                 </div>
@@ -211,7 +211,7 @@
     <!-- Lightbox Modal -->
     <div id="imageLightbox" class="lightbox" onclick="closeLightbox()">
         <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-        <img class="lightbox-content" id="lightboxImg" onclick="event.stopPropagation()">
+        <img decoding="async" loading="lazy" class="lightbox-content" id="lightboxImg" onclick="event.stopPropagation()">
     </div>
 
     <script>
@@ -239,3 +239,4 @@
 </body>
 
 </html>
+

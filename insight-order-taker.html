@@ -162,7 +162,7 @@
                 </header>
 
                 <div class="doc-image">
-                    <img src="./assets/learnings/Learning_Impact_Overview.png"
+                    <img decoding="async" loading="lazy" src="./assets/learnings/Learning_Impact_Overview.png"
                         alt="From Order-Taker to Strategic Learning Partner" class="zoomable-image"
                         onclick="openLightbox(this.src)"
                         onerror="this.src='https://placehold.co/800x450/EBE6DC/737780?text=Strategic+Learning+Partner'">
@@ -224,7 +224,7 @@
     <!-- Lightbox Modal -->
     <div id="imageLightbox" class="lightbox" onclick="closeLightbox()">
         <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-        <img class="lightbox-content" id="lightboxImg" onclick="event.stopPropagation()">
+        <img decoding="async" loading="lazy" class="lightbox-content" id="lightboxImg" onclick="event.stopPropagation()">
     </div>
 
     <script>
@@ -252,3 +252,4 @@
 </body>
 
 </html>
+
