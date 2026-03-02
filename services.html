@@ -129,6 +129,34 @@
                 grid-template-columns: 1fr;
             }
         }
+    
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 999;
+            border: none;
+            outline: none;
+            background-color: #222;
+            color: white;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: opacity 0.3s, background-color 0.3s, transform 0.3s;
+            opacity: 0.8;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #backToTopBtn:hover {
+            background-color: #000;
+            opacity: 1;
+            transform: translateY(-3px);
+        }
     </style>
   <!-- Open Graph / Social Media Meta Tags -->
   <meta property="og:type" content="website">
@@ -254,6 +282,27 @@
         </div>
     </footer>
 
+
+    <!-- Back to Top Button -->
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Back to Top">↑</button>
+
+    <script>
+        // Back to top button logic
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        if (backToTopBtn) {
+            window.onscroll = function() {
+                if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                    backToTopBtn.style.display = "flex";
+                } else {
+                    backToTopBtn.style.display = "none";
+                }
+            };
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 
 </html>
